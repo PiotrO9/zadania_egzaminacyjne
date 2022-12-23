@@ -1,0 +1,4 @@
+SELECT model, kolor, stan FROM samochody WHERE rocznik > 2010;
+UPDATE 'samochody' SET 'kolor' = 'ciemny niebieski' WHERE 'model' = 'Yaris';
+CREATE USER 'joanna'@'%' IDENTIFIED VIA mysql_nativ_password USING '***'; GRANT USAGE ON *.* TO 'andrzej'@'%';
+GRANT CREATE, UPDATE ON `samochody`.`samochody` TO 'joanna'@'%';
