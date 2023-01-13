@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>malarz</title>
+</head>
+<body>
+    <div id="baner">
+        <h1><a href="index.html">Koszty farby</a></h1>
+    </div>
+    <main>
+        <section id="left">
+            <h3>Mieszamy czy wyceniamy?</h3>
+            <a href="mieszamy.html">Mieszamy</a>
+            <a href="cena.html">Wyceniamy</a>
+        </section>
+        <section id="right">
+            <h3>Obliczanie na podstawie powierzchni zapotrzebowania na farbę</h3>
+            <label>Podaj powierzchnie</label>
+            <input type="number"><br><br>
+            <button>Policz</button><br>
+            <p id="wynik"></p>
+        </section>
+    </main>
+    <footer>
+        <p>MALARZ</p>
+        <p>Stronę opacował: 00000000000</p>
+    </footer>
+
+    <script>
+        const btn = document.querySelector("button");
+
+        btn.addEventListener("click", function() {
+            const inputValue = document.querySelector("input").value;
+            const wynik = document.getElementById("wynik");
+
+            let liczbaPuszek = 0;
+
+            if(inputValue % 4 == 0) {
+                liczbaPuszek = inputValue / 4;
+            }
+            else {
+                liczbaPuszek = Math.ceil(inputValue / 4);
+            }
+
+            wynik.innerHTML = "Liczba jednolitrowych puszek potrzebnych do pomalowania wynosi: " + liczbaPuszek;
+        })
+    </script>
+</body>
+</html>
