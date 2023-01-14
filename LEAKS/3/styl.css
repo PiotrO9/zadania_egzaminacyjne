@@ -1,0 +1,67 @@
+/* Piszesz sam */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#left h3 {
+    margin-bottom: 50px;
+}
+
+/* Przepisujesz z poleceń */
+
+* {
+    
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-style: italic;
+
+    /* Piszesz sam */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 80px;
+    padding-top: 10px;
+}
+
+#left {
+    background-color: lightpink;
+    height: 500px;
+    width: 20%;
+    font-size: 20px;
+
+    /* Piszesz sam */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#left img {
+    height: 180px;
+    width: 180px;
+}
+
+#right {
+    background-color: black;
+    height: 500px;
+    width: 80%;
+    font-size: 30px;
+    color: lightpink;
+}
+
+footer {
+    background-color: lightpink;
+    height: 60px;
+}
+
+p {
+    padding: 50px;
+}
